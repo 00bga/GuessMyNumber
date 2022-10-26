@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap');
+
+
+body {
+    background-color: #222222;
+    font-family: 'Press Start 2P', sans-serif;
+    color: #FFFFFF;
+    font-size: 1.2rem;
+    overflow: hidden;
+}
+
+h1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+header {
+    height: 9rem;
+    border-bottom: 7px solid #FFFFFF;
+}
+
+.top {      /* Top div for the Play Again button and the "between" text */
+    margin: auto;
+    width: 95%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.button {   /* Play Again button */
+    width: 8rem;
+    height: 5rem;
+    font-family: 'Press Start 2P', sans-serif;
+    border-radius: 4px;
+    text-align: center;
+}
+
+
+.number {   /* Question Mark */
+    margin: 0 50% 20px 46%;
+    width: 8%;
+    height: 50%;
+    padding: 0.5rem;
+    font-size: 4rem;
+    background-color: #FFFFFF;
+    color: #222222;
+    border-style: solid;
+    border-color: #FFFFFF;
+    text-align: center;
+}
+
+.main {     /* Everything under the question mark */
+    display: grid;
+    grid-template-columns: 20% 20% 20% 40%;
+    grid-template-rows: 20%;
+    row-gap: 2rem;
+}
+
+.label {    /* Number Input */
+    text-align: center;
+    grid-column-start: 2;
+    grid-row-start: 2;
+}
+
+.input {
+    width: 15rem;
+    height: 8rem;
+    background-color: #222222;
+    font-family: 'Press Start 2P', sans-serif;
+    font-size: 4rem;
+    color: #FFFFFF;
+    text-align: center;
+    border-radius: 4px;
+    border-width: 0.35rem;
+    border-color: #FFFFFF;
+}
+
+::placeholder {
+    font-size: 1.5rem;
+}
+
+.check {    /* Button */
+    width: 8rem;
+    height: 5rem;
+    font-family: 'Press Start 2P', sans-serif;
+    border-radius: 4px;
+    text-align: center;
+    align-items: end;
+}
+
+.chkBtn {   /* Label */
+    grid-column-start: 2;
+    grid-row-start: 3;
+    text-align: center;
+}
+
+.left { /* Score and High Score */
+    grid-column-start: 4;
+    grid-row-start: 3;
+    text-align: left;
+}
+
+.guess {    /*Start guessing... */
+    grid-column-start: 4;
+    grid-row-start: 2;
+}
+
+.gap {      /* Empty div for a gap under the line */
+    height: 8rem;
+}
